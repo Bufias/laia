@@ -4,8 +4,10 @@ from math import factorial
 def sinus_aproximat(valor_x, eps):
 
     i = 0
-    previous_accumulated = 0
-    while 1:
+    previous_term = valor_x
+    approx_value = valor_x
+    while abs(previous_term) >= eps:
+        i += 1
         param = 2 * i + 1
 
         if i % 2:
@@ -14,12 +16,10 @@ def sinus_aproximat(valor_x, eps):
             factor = 1
         # if-else structure is the same as (-1)**i
 
-        term = factor * ((valor_x ** param) / factorial(param))
+        new_term = factor * ((valor_x ** param) / factorial(param))
 
-        approx_value = term + previous_accumulated
-        previous_accumulated = approx_value
-        i += 1
+        approx_value += new_term
 
-        if abs(term) < eps:
-            return approx_value
+        previous_term = new_term
 
+    return approx_value

@@ -19,6 +19,11 @@ class SinusAproximatTest(unittest.TestCase):
         expected = 0.09983
         self.assertEqual(expected, round(res, 5))
 
+    def test_1_exp_minus_5(self):
+        res = sinus_aproximat(0.3, 1e-5)
+        expected = 0.29552025
+        self.assertEqual(expected, round(res, 8))
+
 
 if __name__ == '__main__':
     unittest.main()
