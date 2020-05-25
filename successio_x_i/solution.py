@@ -4,8 +4,7 @@ def successio(n, epsilon):
     while True:
 
         calculated = ((i + 3)**2 - 9) / ((i + 3)**3 + i)
-        print(calculated)
-        print(i)
+
         if abs(n - calculated) <= epsilon:
             break
 
