@@ -10,5 +10,4 @@ class RestaurantCovid(Restaurant):
         capacitat_total = super().capacitat()
         if capacitat_total < self.maxafor:
             return capacitat_total
-        else:
-            return self.maxafor
+        return self.maxafor

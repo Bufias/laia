@@ -10,8 +10,7 @@ class Taula:
         if self.nlliures == self.capacitat and npers <= self.capacitat:
             self.nlliures = self.nlliures - npers
             return True
-        else:
-            return False
+        return False
 
     def alliberar(self):
         self.nlliures = self.capacitat
