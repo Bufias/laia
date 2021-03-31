@@ -1,6 +1,5 @@
 import math
-from itertools import groupby
-from functools import reduce
+
 
 def primers():
     b = 7
