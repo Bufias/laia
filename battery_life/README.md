@@ -5,6 +5,10 @@ battery percentage is out from the boundaries.
 The default boundaries have been set from 20% to 80%, because is the
 recommended percentage for most of the batteries.
 
+The script has been tested under:
+- python >= 3.8
+- Ubuntu (Pop!OS) 20.04
+- GNOME Shell 3.36.7
 ## Instructions
 
 ### Get the application
