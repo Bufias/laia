@@ -5,7 +5,7 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 
 MAX_CHARGE_PERCENTAGE = 80
-MIN_CHARGE_PERCENTAGE = 50
+MIN_CHARGE_PERCENTAGE = 20
 MINUTES_SCHEDULE = 5
 
 
