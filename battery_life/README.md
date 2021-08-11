@@ -31,6 +31,8 @@ kill <pid>
 ```
 
 ## ToDos
+- Once the laptop has been plugged/unplugged, accordingly to the
+  instructions, the notification should disappear.
 - Store the pid of the process to be able of killing it.
 - Build the instructions to set up the process at start up.
 - Build an interface able to stop the process and change the boundaries.
