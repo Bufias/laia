@@ -35,6 +35,9 @@ class Notifier:
         action = "UNPLUG"
         self.notify(current_percent, action)
 
+    def close_notification(self):
+        self.notification.close()
+
 
 def check_battery(notifier):
     battery = psutil.sensors_battery()
@@ -45,6 +48,8 @@ def check_battery(notifier):
         notifier.notify_max(current_percent)
     elif not plugged and current_percent < MIN_CHARGE_PERCENTAGE:
         notifier.notify_min(current_percent)
+    else:
+        notifier.close_notification()
 
 
 def main():
