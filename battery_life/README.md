@@ -7,7 +7,7 @@ recommended percentage for most of the batteries.
 
 The script has been tested under:
 - python >= 3.8
-- Ubuntu (Pop!OS) 20.04
+- Ubuntu (Pop!OS) 22.04
 - GNOME Shell 3.36.7
 ## Instructions
 
@@ -19,7 +19,8 @@ Follow these steps for running the application from a virtual environment:
 ```shell
 python3 -m venv checker-env
 source checker-env/bin/activate
-pip install -r requirements.txt
+build-essential libdbus-glib-1-dev libgirepository1.0-dev
+pip3 install -r requirements.txt
 python3 battery_checker.py &
 ```
 Store somewhere (write it, for example) the PID of the process.
